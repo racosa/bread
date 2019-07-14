@@ -1,0 +1,26 @@
+{
+
+  "description": "bread automatically enable all discounts available at Pão de Açucar",
+  "manifest_version": 2,
+  "name": "bread",
+  "version": "1.0",
+  "homepage_url": "https://github.com/racosa/bread",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/logo.png"
+    }
+  }
+
+}
