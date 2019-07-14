@@ -1,26 +1,33 @@
 {
 
-  "description": "bread automatically enable all discounts available at Pão de Açucar",
+  "description": "my-bread automatically enable all discounts available at Pão de Açucar",
   "manifest_version": 2,
-  "name": "bread",
+  "name": "my-bread",
   "version": "1.0",
-  "homepage_url": "https://github.com/racosa/bread",
+  "homepage_url": "https://github.com/racosa/my-bread",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/my-bread-icon.png"
   },
-
   "background": {
     "scripts": ["background.js"]
   },
-
+  "content_scripts": [
+    {
+    "matches": ["<all_urls>"],
+    "js": ["jquery-3.4.1.min.js"]
+    }
+  ],
   "permissions": [
     "activeTab"
   ],
-
   "browser_action": {
     "default_icon": {
-      "48": "icons/bread-icon.png"
+      "48": "icons/my-bread-icon.png"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "my-bread@my-bread.com"
     }
   }
-
 }

@@ -1,6 +1,6 @@
 function activateDiscounts() {
   browser.tabs.executeScript({
-    file: 'bread.js',
+    file: 'my-bread.js',
   });
 }
 
